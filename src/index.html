@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html class="no-js  page" lang="ru">
 
-    <head>
-        <meta charset="utf-8">
-        <title>NTH start project</title>
-        <meta name="description" content="">
-        @@include('_include/page_head.html')
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <title>NTH start project</title>
+    <meta name="description" content="">
+    @@include('_include/page_head.html')
+  </head>
 
-    <body>
+  <body>
+    @@include('blocks/debugger/debugger.html')
 
-        <div class="page__inner">
+    <div class="page__inner">
 
-            <div class="page__content">
-
-
-                <main role="main">
-
-                    @@include('blocks/page-header/page-header.html')
+      <div class="page__content">
 
 
-                </main>
+        <main role="main">
 
-            </div>
 
-            <div class="page__footer-wrapper">
-                @@include('blocks/page-footer/page-footer.html')
-            </div>
+          @@include('blocks/page-header/page-header.html')
 
-        </div>
 
-        @@include('_include/page_bottom.html')
-    </body>
+        </main>
+
+      </div>
+
+      <div class="page__footer-wrapper">
+        @@include('blocks/page-footer/page-footer.html')
+      </div>
+
+    </div>
+
+    @@include('_include/page_bottom.html')
+  </body>
 </html>

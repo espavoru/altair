@@ -1,0 +1,7 @@
+// В этом файле должны быть стили для БЭМ-блока debugger, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.debugger {
+  @include debug(rgba(0,0,0,0.08), 1px solid rgba(255,255,0,0.3));
+}

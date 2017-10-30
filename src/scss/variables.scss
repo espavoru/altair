@@ -18,7 +18,6 @@ $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
 
 
-
 // Семантические цвета
 
 $text-color:                  $gray-darkest;
@@ -50,7 +49,7 @@ $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;
 
-
+$fa-font-path:                '../fonts';
 
 // Ширины
 
@@ -72,7 +71,7 @@ $container-xxl:               $screen-xxl - 30;
 // Модульная сетка
 
 $grid-columns:                12;
-$grid-gutter-width:           30px;
+$grid-gutter-width:           20px;
 
 
 

@@ -55,13 +55,15 @@
     "close": [],
     "tabs": [],
     "object-fit-polyfill": [],
-    "embed-responsive": []
+    "embed-responsive": [],
+    "font-awesome": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
+    "../../node_modules/bootstrap/scss/bootstrap.scss",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [
@@ -78,6 +80,8 @@
     "./node_modules/owl.carousel/dist/owl.carousel.js",
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/bootstrap/dist/js/popper.min.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.js",
     "./node_modules/object-fit-images/dist/ofi.js"
   ],
   "addJsAfter": [

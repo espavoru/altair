@@ -24,7 +24,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    @include wrapper();
   }
 
   &__content {
@@ -87,4 +86,58 @@ svg {
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+// Main styles temp
+.main-nav {
+  padding-top: 20px;
+}
+
+.main-nav__list {
+  align-items: center;
+}
+
+.logo__text {
+  font-size: 2.6em;
+  vertical-align: middle;
+}
+
+a.main-nav__link {
+  padding: 1em 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* Headline */
+.headline {
+  padding-top: 90px;
+
+  &__items {
+    align-items: flex-end;
+  }
+
+  &__item {
+
+    &:first-child {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      text-align: right;
+    }
+  }
+}
+
+.headline__text {
+  font-size: 2em;
+  text-transform: uppercase;
+
+  &--handwrite {
+    font-style: italic;
+  }
+
+  &--lead {
+    font-size: 5em;
+  }
 }

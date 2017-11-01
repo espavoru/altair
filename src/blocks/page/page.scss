@@ -104,7 +104,7 @@ img {
 }
 
 a.main-nav__link {
-  padding: 1em 1em;
+  padding: 1em;
   text-transform: uppercase;
   font-weight: 700;
   vertical-align: middle;
@@ -112,11 +112,15 @@ a.main-nav__link {
 
 /* Headline */
 .headline {
-  padding-top: 90px;
+  padding-top: px-to-em(90);
+  padding-bottom: px-to-em(460);
+}
 
-  &__items {
-    align-items: flex-end;
-  }
+.section-title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
 
   &__item {
 
@@ -129,7 +133,7 @@ a.main-nav__link {
   }
 }
 
-.headline__text {
+.section-title__text {
   font-size: 2em;
   text-transform: uppercase;
 
@@ -140,4 +144,13 @@ a.main-nav__link {
   &--lead {
     font-size: 5em;
   }
+}
+
+// stylelint-disable
+// stylelint-enable
+
+
+/* Work */
+.work {
+  padding-top: px-to-em(115);
 }

@@ -153,4 +153,19 @@ a.main-nav__link {
 /* Work */
 .work {
   padding-top: px-to-em(115);
+
+  &__wrapper {
+    @include wrapper();
+  }
+
+  .carousel-item {
+    @include row-flex();
+
+    &__content {
+      @include col();
+      @include size(4);
+    }
+  }
+
+
 }

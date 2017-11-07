@@ -153,19 +153,95 @@ a.main-nav__link {
 /* Work */
 .work {
   padding-top: px-to-em(115);
+  padding-bottom: px-to-em(90);
+  color: #fff;
+  background-color: #333;
+
+  .section-title {
+    margin-bottom: px-to-em(50);
+  }
 
   &__wrapper {
     @include wrapper();
   }
 
+  .carousel-inner {
+    margin-bottom: px-to-em(50);
+  }
+
   .carousel-item {
     @include row-flex();
+    justify-content: stretch;
 
     &__content {
       @include col();
       @include size(4);
+      align-self: stretch;
+      padding-top: px-to-em(10);
+
+      p {
+        margin-bottom: px-to-em(30);
+      }
+    }
+
+    &__img {
+      @include col();
+      @include size(4);
+      text-align: center;
+    }
+
+    &__features {
+      @include size(4);
+      align-self: stretch;
+      padding-top: px-to-em(10);
+
+
+      .features-items {
+        @include row-float();
+        margin: 0 auto;
+
+        .features-item {
+          @include col();
+          @include col-float();
+          padding: px-to-em(20);
+          text-align: center;
+
+          .fa {
+            font-size: 1.5em;
+          }
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      .view-gallery {
+
+      }
     }
   }
 
+  .carousel-work__control {
+    text-align: center;
 
+    .counter,
+    .carousel-work__control-prev,
+    .carousel-work__control-next {
+      display: inline-block;
+      width: px-to-em(160);
+      padding: px-to-em(10);
+      background-color: #fff;
+    }
+
+    .counter {
+      width: px-to-em(70);
+      padding: 0;
+      background-color: inherit;
+    }
+  }
+}
+
+/* Workflow, how we work */
+.workflow {
 }

@@ -300,3 +300,16 @@ a.main-nav__link {
   }
 }
 
+/* Fun facts */
+.facts {
+  padding-top: px-to-em(110);
+
+  .section-title {
+    margin-bottom: px-to-em(50);
+  }
+}
+
+.facts__wrapper {
+  @include wrapper();
+}
+

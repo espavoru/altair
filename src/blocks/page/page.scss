@@ -112,8 +112,8 @@ a.main-nav__link {
 
 /* Headline */
 .headline {
-  padding-top: px-to-em(90);
-  padding-bottom: px-to-em(460);
+  padding-top: px-to-em(70);
+  padding-bottom: px-to-em(420);
 }
 
 .section-title {
@@ -125,6 +125,7 @@ a.main-nav__link {
 
 .section-title__text {
   font-size: 2em;
+  line-height: 1;
   text-transform: uppercase;
 
   &--handwrite {
@@ -271,3 +272,31 @@ a.main-nav__link {
 .workflow__btn {
   text-align: center;
 }
+
+/* Blog posts */
+.blog-posts {
+  padding-top: px-to-em(100);
+  padding-bottom: px-to-em(140);
+  color: #fff;
+  background-color: #333;
+
+  .section-title {
+    margin-bottom: px-to-em(75);
+  }
+
+  .owl-stage-outer {
+    margin-bottom: px-to-em(60);
+  }
+
+  .owl-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .owl-prev,
+  .owl-next {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+

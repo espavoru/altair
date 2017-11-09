@@ -303,6 +303,7 @@ a.main-nav__link {
 /* Fun facts */
 .facts {
   padding-top: px-to-em(110);
+  padding-bottom: px-to-em(70);
 
   .section-title {
     margin-bottom: px-to-em(50);
@@ -311,5 +312,40 @@ a.main-nav__link {
 
 .facts__wrapper {
   @include wrapper();
+}
+
+/* Footer */
+.page-footer {
+  padding-top: px-to-em(25);
+  padding-bottom: px-to-em(25);
+  background-color: #333;
+  color: #fff;
+
+  &__wrapper {
+    @include wrapper();
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-footer {
+    align-items: center;
+    display: flex;
+
+    &__text {
+    }
+
+    &__list {
+      margin: 0;
+      margin-left: px-to-em(30);
+      padding: 0;
+    }
+
+    &__item {
+      display: inline-block;
+    }
+  }
 }
 

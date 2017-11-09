@@ -49,7 +49,7 @@
                 <li class="main-nav__item">
                   <a href="#" class="main-nav__link">
                     <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle-o fa-stack-2x"></i>
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
                       <i class="fa fa-envelope-o fa-stack-1x"></i>
                     </span>
                   </a>
@@ -247,13 +247,29 @@
               <img src="http://placehold.it/920x360" alt="Clients">
             </div><!-- /facts__wrapper -->
           </div><!-- /facts -->
-
         </main><!-- /main -->
-      </div>
+      </div><!-- /page__content -->
       <div class="page__footer-wrapper">
         <!--@@include('blocks/page-footer/page-footer.html')-->
+        <footer class="page-footer" role="contentinfo">
+          <div class="page-footer__wrapper">
+            <div class="page-footer__row">
+              <div class="page-footer__copyright">Copyright 2017. Altair. All rights reserved</div>
+              <div class="page-footer__social social-footer">
+                <span class="social-footer__text">Follow us</span>
+                <ul class="social-footer__list">
+                  <li class="social-footer__item"><a class="fa-stack" href="#"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></a></li>
+                  <li class="social-footer__item"><a class="fa-stack" href="#"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></a></li>
+                  <li class="social-footer__item"><a class="fa-stack" href="#"><i class="fa fa-circle-thin fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i></a></li>
+                </ul><!-- /social-footer__list -->
+              </div><!-- /social-footer -->
+            </div><!-- /page-footer__row -->
+          </div><!-- /page-footer__wrapper -->
+
+        </footer>
+
       </div>
-    </div>
+    </div><!-- /page__inner -->
     @@include('_include/page_bottom.html')
   </body>
 </html>

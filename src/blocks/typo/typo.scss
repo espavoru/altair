@@ -38,6 +38,12 @@ $border-radius:               3px !default;
 //   font-style: normal;
 // }
 
+@font-face {
+  font-family: Montserrat;
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'), url('../fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
 body {
   font-family: $font-family;

@@ -1,4 +1,3 @@
-
 // Make viewport great again (responsive)
 // http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
 @at-root {
@@ -90,56 +89,6 @@ img {
 
 
 // Main styles temp
-.main-nav {
-  padding-top: 20px;
-}
-
-.main-nav__list {
-  align-items: center;
-}
-
-.logo__text {
-  font-size: 2.6em;
-  vertical-align: middle;
-}
-
-a.main-nav__link {
-  padding: 1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  vertical-align: middle;
-}
-
-/* Headline */
-.headline {
-  padding-top: px-to-em(70);
-  padding-bottom: px-to-em(420);
-}
-
-.section-title {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.section-title__text {
-  font-size: 2em;
-  line-height: 1;
-  text-transform: uppercase;
-
-  &--handwrite {
-    font-style: italic;
-  }
-
-  &--lead {
-    font-size: 5em;
-  }
-}
-
-// stylelint-disable
-// stylelint-enable
-
 
 /* Work */
 .work {

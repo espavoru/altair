@@ -6,14 +6,15 @@
 
 (Нужно убрать пробел между символами @)
 Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
+-->
 
 
 
 <nav id="main-nav" class="main-nav" role="navigation">
   <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-  @@include('../logo/logo.html')
+  <a href="#" class="logo">
+    <img src="../img/logo__main.png" alt="logo"/>
+  </a><!-- /logo -->
   <ul class="main-nav__list">
     <li class="main-nav__item  main-nav__item--active">
       <a href="" class="main-nav__link">
@@ -41,12 +42,12 @@
       </a>
     </li>
     <li class="main-nav__item">
-      <a href="#" class="main-nav__link">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle-o fa-stack-2x"></i>
+      <a href="#" class="main-nav__link main-nav__link--icon">
+        <span class="fa-stack">
+          <!--<i class="fa fa-circle-thin fa-stack-2x"></i>-->
           <i class="fa fa-envelope-o fa-stack-1x"></i>
         </span>
       </a>
     </li>
-  </ul>
-</nav>-->
+  </ul><!-- /main-nav__list -->
+</nav><!-- /main-nav -->

@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>NTH start project</title>
+    <title>Altair</title>
     <meta name="description" content="">
     @@include('_include/page_head.html')
   </head>
@@ -14,55 +14,14 @@
       <div class="page__content">
         <header class="page-header" role="banner">
           <div class="page-header__wrapper">
-            <nav id="main-nav" class="main-nav" role="navigation">
-              <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-              <a href="/" class="logo navbar-brand">
-                <img src="http://placehold.it/40x40" alt="logo">
-                <span class="logo__text">Altair</span>
-              </a><!-- /logo -->
-              <ul class="main-nav__list">
-                <li class="main-nav__item  main-nav__item--active">
-                  <a href="" class="main-nav__link">
-                    Home
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link">
-                    Work
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link">
-                    Process
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link">
-                    Blog
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link">
-                    Fun facts
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__link">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle-thin fa-stack-2x"></i>
-                      <i class="fa fa-envelope-o fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </li>
-              </ul><!-- /main-nav__list -->
-            </nav><!-- /main-nav -->
+            @@include('blocks/main-nav/main-nav.html')
           </div><!-- /page-header__wrapper -->
         </header><!-- /header -->
 
         <main role="main">
           <div class="headline">
             <div class="headline__wrapper">
-              <div class="section-title">
+              <div class="headline__title section-title">
                 <div class="section-title__item">
                   <span class="section-title__text section-title__text--handwrite">Think</span>
                   <span class="section-title__text">Let out The</span>

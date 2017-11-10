@@ -6,6 +6,9 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  padding-top: px-to-em(70);
+  padding-bottom: px-to-em(420);
+
   &__wrapper {
     @include wrapper();
   }

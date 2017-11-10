@@ -11,21 +11,33 @@
   justify-content: center;
   align-items: flex-end;
 
-  &__item {
-
-  }
-
   &__text {
-    font-size: 2em;
-    line-height: 1;
+    font-family: $font-family--title;
+    font-size: 56px;
+    line-height: 53px;
     text-transform: uppercase;
 
     &--handwrite {
-      font-style: italic;
-    }
+      font-family: $font-family--handwrite;
+      text-transform: capitalize;
 
-    &--lead {
-      font-size: 5em;
+      path {
+        fill: transparent;
+      }
+
+      text {
+        font-size: 0.75em;
+        font-weight: 700;
+      }
     }
+  }
+
+
+  .section-title__text--lead {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 122px;
+    line-height: 58px;
+    color: #f00;
   }
 }

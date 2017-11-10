@@ -45,6 +45,20 @@ $border-radius:               3px !default;
   font-style: normal;
 }
 
+@font-face {
+  font-family: Pacifico;
+  src: url('../fonts/pacifico-regular-webfont.woff2') format('woff2'), url('../fonts/pacifico-regular-webfont.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kenyan coffee';
+  src: url('kenyan_coffee_bd-webfont.woff2') format('woff2'), url('kenyan_coffee_bd-webfont.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: $font-family;
   font-size: $font-size;

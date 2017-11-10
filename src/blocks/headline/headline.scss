@@ -6,19 +6,19 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding-top: px-to-em(70);
   padding-bottom: px-to-em(420);
+  background-image: url('../img/bg-section1.png');
+  background-position: 20% 346%;
+  background-repeat: no-repeat;
+
+  .section-title__item:first-child {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+  }
+
 
   &__wrapper {
     @include wrapper();
-  }
-
-  &__items {
-    @include row-flex();
-    justify-content: center;
-  }
-
-  &__item {
-
   }
 }

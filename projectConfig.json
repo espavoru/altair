@@ -61,7 +61,8 @@
     "debugger": [],
     "navbar": [],
     "headline": [],
-    "section-title": []
+    "section-title": [],
+    "work": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

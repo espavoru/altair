@@ -73,7 +73,7 @@ $transition-time:             0.3s !default;
     padding: 0.5em;
     padding-right: 0;
 
-    font-family: Montserrat;
+    font-family: $font-family--subtitle;
     font-size: px-to-em(13);
     line-height: 6em;
     letter-spacing: 0.05em;

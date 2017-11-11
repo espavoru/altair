@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <!--@@include('blocks/debugger/debugger.html')-->
+    @@include('blocks/debugger/debugger.html')
     <div class="page__inner">
       <div class="page__content">
         <header class="page-header" role="banner">
@@ -23,13 +23,13 @@
             <div class="headline__wrapper">
               <div class="headline__title section-title">
                 <div class="section-title__item">
-                  <svg class="section-title__text section-title__text--handwrite" viewBox="103 -10 200 80">
-                    <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-                    <text x="70%">
-                      <textPath xlink:href="#curve">
-                        Think
-                      </textPath>
-                    </text>
+                  <svg class="section-title__text section-title__text--handwrite" viewBox="90 -10 200 80">
+                  <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                  <text x="75%">
+                  <textPath xlink:href="#curve">
+                    Think
+                  </textPath>
+                  </text>
                   </svg>
                   <span class="section-title__text">Let out The</span>
                 </div>
@@ -47,7 +47,9 @@
             <div class="work__wrapper">
               <div class="section-title">
                 <div class="section-title__item">
-                  <span class="section-title__text section-title__text--handwrite">Our</span>
+                  <div class="section-title__text section-title__text--handwrite">
+                    Our
+                  </div>
                   <span class="section-title__text">Latest</span>
                 </div>
                 <div class="section-title__item">
@@ -55,46 +57,48 @@
                 </div>
               </div><!-- /section-title -->
 
-              <div id="carousel-work" class="carousel slide" data-ride="carousel">
+              <div id="carousel-work" class="work__carousel carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="carousel-item__content">
                       <h2>Brrrilliant</h2>
-                      <p>Donec viverra interdum turpis, a auctor nunc aliquam ac. Phasellus iaculis ex in justo eleifend volutpat. Vivamus cursus ex metus, a mollis massa sodales id. Praesent auctor nibh libero, et consequat</p>
-                      <ul class="fa-ul">
+                      <p>Donec viverra interdum turpis, a auctor nunc aliquam ac. Phasellus iaculis ex in justo eleifend volutpat. Vivamus cursus ex metus, a mollis massa sodales id. Praesent auctor nibh libero, et consequat Praesent auctor nibh libero, et consequat</p>
+                      <ul class="fa-ul carousel-item__list">
                         <li><i class="fa-li fa fa-trophy"></i>Trophy</li>
                         <li><i class="fa-li fa fa-list-ul"></i>List items</li>
                         <li><i class="fa-li fa fa-star"></i>Rating</li>
                       </ul>
                     </div><!-- /carousel-item__content -->
-                    <div class="carousel-item__img"><img src="http://placehold.it/190x400" alt=""></div>
+                    <div class="carousel-item__img"><img src="img/img-phone.png" alt="phone"></div>
                     <div class="carousel-item__features">
                       <h2>Technologies used</h2>
                       <div class="features-items">
-                        <div class="features-item">
-                          <i class="fa fa-html5"></i>
-                          <span>Html5</span>
-                        </div>
-                        <div class="features-item">
-                          <i class="fa fa-css3"></i>
-                          <span>Css3</span>
-                        </div>
-                        <div class="features-item">
-                          <i class="fa fa-android"></i>
-                          <span>Html5</span>
+                        <div class="features-items__row">
+                          <div class="features-item">
+                            <i class="fa fa-html5"></i>
+                            <span>Html5</span>
+                          </div>
+                          <div class="features-item">
+                            <i class="fa fa-css3"></i>
+                            <span>Css3</span>
+                          </div>
+                          <div class="features-item">
+                            <i class="fa fa-android"></i>
+                            <span>Html5</span>
+                          </div>
                         </div>
                       </div>
-                      <a href="#" class="view-gallery">View gallery</a>
+                      <a href="#" class="carousel-item__link">View gallery <i class="fa fa-chevron-right"></i></a>
                     </div>
                   </div><!-- /carousel-item -->
                 </div>
                 <div class="carousel-work__control">
                   <a class="carousel-work__control-prev" href="#carousel-work" role="button" data-slide="prev">
-                    Previous project
+                    <span>Previous project</span>
                   </a>
                   <span class="counter">01/04</span>
                   <a class="carousel-work__control-next" href="#carousel-work" role="button" data-slide="next">
-                    Next project
+                    <span>Next project</span>
                   </a>
                 </div><!-- /carousel-work__control -->
               </div><!-- /carousel-work -->

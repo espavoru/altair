@@ -1,0 +1,131 @@
+// В этом файле должны быть стили для БЭМ-блока blog-posts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.blog-posts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: px-to-em(92);
+  padding-bottom: px-to-em(40);
+  color: #fff;
+  background-color: #3f3b48;
+
+  .section-title {
+    margin-bottom: px-to-em(75);
+
+    &__item:first-child {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-end;
+    }
+  }
+
+  .section-title__text {
+    margin-right: -3px;
+    font-size: 3.72em;
+    line-height: 1;
+
+    &--handwrite {
+      margin-right: 4px;
+      font-size: 2.9em;
+      font-weight: 500;
+      color: #fff;
+      transform: rotateZ(-5deg);
+    }
+
+    &--lead {
+      font-size: px-to-em(104);
+      line-height: 0.81em;
+      color: #fff;
+    }
+  }
+
+  .item-post {
+    position: relative;
+    height: 445px;
+    padding: 20px;
+    padding-bottom: px-to-em(40);
+    background-color: #595466;
+
+    &__date {
+      float: right;
+      position: relative;
+      width: px-to-em(75);
+      margin-top: -54px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      z-index: 5;
+    }
+
+    &__day {
+      padding-top: 0.21429em;
+      padding-bottom: 0.21429em;
+      font-size: px-to-em(38);
+      line-height: 1;
+      color: $text-color;
+    }
+
+    &__month {
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      font-family: $font-family--subtitle;
+      font-size: px-to-em(11);
+      font-weight: 700;
+      text-transform: uppercase;
+      background-color: $text-color;
+    }
+
+    &__author {
+      margin-top: px-to-em(25);
+      margin-bottom: px-to-em(15);
+      font-family: $font-family--subtitle;
+      font-size: px-to-em(10);
+      text-transform: uppercase;
+    }
+
+    &__title {
+      margin-bottom: px-to-em(25);
+      font-family: $font-family--subtitle;
+      font-size: px-to-em(14);
+      line-height: 1.45em;
+      text-transform: uppercase;
+    }
+
+    &__link {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: px-to-em(40);
+      font-size: px-to-em(10);
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &__icon {
+      margin-right: 10px;
+      font-size: 2em;
+      vertical-align: middle;
+    }
+  }
+
+  .owl-stage-outer {
+    margin-bottom: px-to-em(60);
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-prev,
+  .owl-next {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .field-range__input-wrap {
+    @include wrapper();
+  }
+}

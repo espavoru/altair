@@ -46,7 +46,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: px-to-em(82);
-      line-height: .96em;
+      line-height: 0.96em;
 
       &:after {
         content: '';
@@ -58,5 +58,4 @@
       }
     }
   }
-
 }

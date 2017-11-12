@@ -63,7 +63,9 @@
     "headline": [],
     "section-title": [],
     "work": [],
-    "workflow": []
+    "workflow": [],
+    "blog-posts": [],
+    "input-range-68": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

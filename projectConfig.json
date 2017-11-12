@@ -62,7 +62,8 @@
     "navbar": [],
     "headline": [],
     "section-title": [],
-    "work": []
+    "work": [],
+    "workflow": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

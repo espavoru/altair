@@ -1,0 +1,86 @@
+// В этом файле должны быть стили для БЭМ-блока workflow, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.workflow {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: px-to-em(92);
+  padding-bottom: px-to-em(247);
+  background-color: #eee;
+  background-image: url('../img/bg-workflow.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  .section-title {
+    margin-bottom: px-to-em(51);
+    line-height: 1;
+  }
+
+  .section-title__text {
+
+    &--lead {
+      padding-left: 6px;
+      padding-right: 8px;
+      font-size: px-to-em(104);
+      line-height: 0.6em;
+    }
+  }
+
+  &__wrapper {
+    @include wrapper();
+  }
+
+  &__items {
+    @include row-flex();
+    margin-bottom: px-to-em(63);
+  }
+
+  &__item {
+    @include col();
+    @include size(4);
+  }
+
+  &__subtitle {
+    margin-bottom: 1em;
+    font-family: $font-family--subtitle;
+    font-size: px-to-em(18);
+    text-transform: uppercase;
+
+  }
+
+  .subtitle-workflow {
+
+    &__icon {
+      margin-right: 0.3em;
+      font-size: 1.8em;
+    }
+  }
+
+  &__content {
+    font-size: px-to-em(12);
+    line-height: 1.68em;
+    color: #333;
+  }
+
+  &__btn {
+    .btn {
+      min-width: 205px;
+      font-family: $font-family--subtitle;
+      font-size: px-to-em(16);
+      line-height: 1.9em;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 5px;
+      background-color: $color-danger;
+    }
+  }
+}
+
+
+
+
+.workflow__btn {
+  text-align: center;
+}

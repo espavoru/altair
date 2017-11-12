@@ -91,37 +91,6 @@ img {
 // Main styles temp
 
 
-/* Workflow, how we work */
-.workflow {
-  padding-top: px-to-em(100);
-  padding-bottom: px-to-em(270);
-  background-color: #eee;
-
-  .section-title {
-    margin-bottom: px-to-em(17);
-    font-size: 3em;
-    line-height: 1;
-  }
-}
-
-.workflow__wrapper {
-  @include wrapper();
-}
-
-.workflow__items {
-  @include row-flex();
-  margin-bottom: px-to-em(50);
-}
-
-.workflow__item {
-  @include col();
-  @include size(4);
-}
-
-.workflow__btn {
-  text-align: center;
-}
-
 /* Blog posts */
 .blog-posts {
   padding-top: px-to-em(100);

@@ -90,20 +90,6 @@ img {
 
 // Main styles temp
 
-/* Fun facts */
-.facts {
-  padding-top: px-to-em(110);
-  padding-bottom: px-to-em(70);
-
-  .section-title {
-    margin-bottom: px-to-em(50);
-  }
-}
-
-.facts__wrapper {
-  @include wrapper();
-}
-
 /* Footer */
 .page-footer {
   padding-top: px-to-em(25);

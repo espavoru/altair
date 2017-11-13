@@ -65,7 +65,9 @@
     "work": [],
     "workflow": [],
     "blog-posts": [],
-    "input-range-68": []
+    "input-range-68": [],
+    "facts": [],
+    "diagram-facts": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

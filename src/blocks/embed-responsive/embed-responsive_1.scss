@@ -12,15 +12,13 @@
   &::before {
     content: '';
     display: block;
-    padding-top: 40%;
-    // padding-top: percentage(9 / 16); // по умолчанию ожидается вставка в формате 16/9
+    padding-top: percentage(9 / 16); // по умолчанию ожидается вставка в формате 16/9
   }
 
   // embed,
   // object,
-  video,
   iframe,
-  &__content {
+  video {
     position: absolute;
     top: 0;
     bottom: 0;

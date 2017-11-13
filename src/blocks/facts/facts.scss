@@ -1,0 +1,48 @@
+// В этом файле должны быть стили для БЭМ-блока facts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.facts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: px-to-em(96);
+  padding-bottom: px-to-em(55);
+
+  .section-title {
+    margin-bottom: px-to-em(50);
+  }
+
+  .section-title__text {
+    position: relative;
+    margin-right: -3px;
+    font-size: 3.72em;
+    line-height: 1;
+
+    &--lead {
+      font-size: px-to-em(104);
+      line-height: 0.81em;
+      color: $color-danger;
+    }
+
+    &--underline {
+      position: relative;
+      top: -6px;
+      left: 8px;
+      font-size: px-to-em(82);
+      line-height: 0.94em;
+    }
+  }
+
+  &__wrapper {
+    @include wrapper();
+  }
+
+  &__subtitle {
+    margin-bottom: 1.2em;
+    font-family: $font-family--subtitle;
+    font-size: px-to-em(18);
+    color: #333;
+    text-transform: uppercase;
+  }
+}

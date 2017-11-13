@@ -5,4 +5,44 @@
 .page-footer {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding-top: px-to-em(25);
+  padding-bottom: px-to-em(25);
+  font-size: px-to-em(14);
+  line-height: 35px;
+  color: #fff;
+  background-color: #333;
+
+  &__wrapper {
+    @include wrapper();
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+  }
+
+  .social-footer {
+    align-items: center;
+    display: flex;
+
+    &__list {
+      margin: 0;
+      margin-left: px-to-em(16);
+      padding: 0;
+    }
+
+    &__item {
+      display: inline-block;
+    }
+
+    &__link {
+      font-size: 1.3em;
+      line-height: 35px;
+      color: #fff;
+    }
+  }
 }

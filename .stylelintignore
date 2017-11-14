@@ -2,4 +2,5 @@
 src/blocks/sprite-png/sprite-png.scss
 src/blocks/font-awesome/*.*
 src/blocks/smart-grid/*.*
+src/blocks/input-range-68/*.*
 ../../node_modules/bootstrap/scss/bootstrap.scss

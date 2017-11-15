@@ -11,6 +11,11 @@
 
   .section-title {
     margin-bottom: px-to-em(50);
+    font-size: 0.8em;
+    
+    @include sm-block() {
+      font-size: 1em;
+    }
   }
 
   .section-title__text {

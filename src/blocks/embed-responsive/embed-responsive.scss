@@ -9,6 +9,15 @@
   padding: 0;
   overflow: hidden;
 
+  @include sm-block() {
+    background: url('../img/bg-fun-facts.png') no-repeat;
+    background-size: contain;
+  }
+
+  @include lg-block() {
+    background: none;
+  }
+
   &::before {
     content: '';
     display: block;
@@ -30,7 +39,19 @@
     border: 0;
   }
 
+  img {
+    display: block;
+    margin: 0 auto;
 
+    @include sm-block() {
+      display: none;
+    }
+
+    @include lg-block() {
+      display: block;
+      margin: 0;
+    }
+  }
 
   &--4-3 { // модификатор на случай вставки 4/3
 

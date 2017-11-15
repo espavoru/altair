@@ -6,12 +6,17 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
+  display: none;
+
+  @include lg-block() {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 
   &__sphere {
     width: 10px;

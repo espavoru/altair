@@ -12,22 +12,31 @@ $(document).ready(function(){
          items: 1,
          nav: true,
          loop: true,
+         stagePadding: 30,
          center: true
        },
        480 : {
-         items: 3
+         items: 1,
+         margin: 20,
+         stagePadding: 100
        },
        768 : {
-         items: 3
+         items: 2,
+         margin: 20,
+         stagePadding: 100
        },
        992 : {
-         items: 3
+         items: 2,
+         margin: 20,
+         stagePadding: 150
        },
        1200 : {
-         items: 2
+         items: 3,
+         stagePadding: 100
        },
        1800 : {
-         items: 3
+         items: 3,
+         stagePadding: 350
        }
      }
    });

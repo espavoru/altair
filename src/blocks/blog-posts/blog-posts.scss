@@ -11,8 +11,14 @@
   color: #fff;
   background-color: #3f3b48;
 
+
   .section-title {
     margin-bottom: px-to-em(75);
+    font-size: 0.75em;
+
+    @include sm-block() {
+      font-size: 1em;
+    }
 
     &__item:first-child {
       display: flex;

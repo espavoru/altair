@@ -17,8 +17,13 @@
   -ms-overflow-style: scrollbar;
   -ms-text-size-adjust: 100%; // stylelint-disable-line  property-no-vendor-prefix
   min-width: 320px;
+  max-width: 1920px;
   min-height: 100%;
   overflow-x: hidden;
+
+  @include xxl-block() {
+    margin: 0 auto;
+  }
 
   &__inner {
     min-height: 100vh;

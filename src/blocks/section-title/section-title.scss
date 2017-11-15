@@ -12,6 +12,7 @@
   align-items: flex-end;
 
   &__text {
+    display: inline-block;
     font-family: $font-family--title;
     font-size: 4em;
     line-height: 0.94em;

@@ -10,13 +10,23 @@
   padding-top: px-to-em(94);
   padding-bottom: px-to-em(94);
   color: #fff;
-  background-color: #333;
-  background-image: url('../img/bg-section2.png');
+  background-color: #3f3b48;
+  background-image: radial-gradient(#54505b, #3f3b48);
   background-repeat: no-repeat;
   background-position: center;
 
+  @include md-block() {
+    background-image: url('../img/bg-section2.png');
+  }
+
   .section-title {
-    margin-bottom: px-to-em(50);
+    margin-bottom: px-to-em(30);
+    font-size: 0.8em;
+
+    @include sm-block() {
+      margin-bottom: px-to-em(50);
+      font-size: 1em;
+    }
 
     &__item:first-child {
       display: flex;
@@ -37,8 +47,8 @@
     }
 
     &--lead {
-      font-size: 104px;
-      line-height: 87px;
+      font-size: px-to-em(104);
+      line-height: 0.8em;
       color: #fff;
     }
   }
@@ -70,9 +80,12 @@
 
     &__content {
       @include col();
-      @include size(4);
+      @include size(12);
+      @include size-sm(6)
+      @include size-md(4)
       align-self: stretch;
       padding-top: 1.81429em;
+      margin-bottom: px-to-em(50);
 
       p {
         margin-bottom: 1.64286em;
@@ -110,15 +123,24 @@
 
     &__img {
       @include col();
-      @include size(4);
+      @include size(12);
+      @include size-sm(6);
+      @include size-md(4);
       text-align: center;
     }
 
     &__features {
       @include col();
-      @include size(4);
+      @include size(12);
+      @include size-sm(12);
+      @include size-md(4);
       align-self: stretch;
       padding-top: 1.81429em;
+      text-align: center;
+
+      @include md-block() {
+        text-align: left;
+      }
 
       h2 {
         margin-bottom: 1.1em;
@@ -126,10 +148,16 @@
 
       .features-items {
         width: 82%;
+        margin: 0 auto;
         margin-bottom: 35px;
         background-color: #635f6d;
         border-radius: 5px;
         font-size: 0;
+
+        @include md-block() {
+          margin: 0;
+          margin-bottom: 35px;
+        }
       }
 
       .features-item {
@@ -163,61 +191,93 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.9em;
+
+    @include sm-block() {
+      font-size: 1em;
+    }
 
     .carousel-work__control-prev,
     .carousel-work__control-next {
       display: inline-block;
       position: relative;
-      width: px-to-em(160);
+      width: 125px;
+      padding: 0 5px;
+
+      @include sm-block() {
+        width: px-to-em(160);
+        height: 42px;
+        padding: 0;
+      }
     }
 
     .counter {
       display: inline-block;
-      width: px-to-em(75);
-      height: 60px;
+      width: 55px;
+      height: 61px;
       padding: 0;
-      line-height: 60px;
+      line-height: 61px;
       text-align: center;
       background-color: inherit;
       background-image: url('../img/img-pagination.png');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      background-position: center;
+
+      @include sm-block() {
+        width: 75px;
+        background-size: cover;
+      }
     }
   }
 
   .carousel-work__control-prev {
-    height: 42px;
-    border-left: 165px solid #fff;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    text-align: right;
+
+    @include sm-block() {
+      border-left: 165px solid #fff;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
 
     span {
-      position: absolute;
-      left: -145px;
-      top: 7px;
       font-family: $font-family--subtitle;
       font-size: px-to-em(12);
       text-transform: uppercase;
       font-weight: 700;
-      color: $text-color;
+      color: #fff;
+
+      @include sm-block() {
+        position: absolute;
+        left: -145px;
+        top: 7px;
+        color: $text-color;
+      }
     }
   }
 
   .carousel-work__control-next {
-    height: 42px;
-    border-right: 165px solid #fff;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    text-align: left;
+
+    @include sm-block() {
+      border-right: 165px solid #fff;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
 
     span {
-      position: absolute;
-      right: -130px;
-      top: 7px;
       font-family: $font-family--subtitle;
       font-size: px-to-em(12);
       text-transform: uppercase;
       font-weight: 700;
-      color: $text-color;
+      color: #fff;
+
+      @include sm-block() {
+        position: absolute;
+        right: -130px;
+        top: 7px;
+        color: $text-color;
+      }
     }
   }
 }

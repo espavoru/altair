@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header" role="banner">
+        <div class="page-header__wrapper">
+
+
+
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <a href="#" class="logo">
+              <img src="../img/logo__main.png" alt="logo"/>
+            </a><!-- /logo -->
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="" class="main-nav__link">
+                  Home
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Work
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Process
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Blog
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Fun facts
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#modal-contact-form" class="main-nav__link main-nav__link--icon" data-toggle="modal">
+                  <span class="fa-stack">
+                    <!--<i class="fa fa-circle-thin fa-stack-2x"></i>-->
+                    <i class="fa fa-envelope-o fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+            </ul><!-- /main-nav__list -->
+          </nav><!-- /main-nav -->
+
+        </div>
+      </header>
+
+
+      <main role="main">
+
+        <h1>NTH start project</h1>
+
+        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        page-footer
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

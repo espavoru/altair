@@ -67,14 +67,14 @@
     "blog-posts": [],
     "input-range-68": [],
     "facts": [],
-    "diagram-facts": []
+    "diagram-facts": [],
+    "modal-contact-form": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
-    "../../node_modules/bootstrap/scss/bootstrap.scss",
     "../../node_modules/nouislider/distribute/nouislider.css"
   ],
   "addCssAfter": [

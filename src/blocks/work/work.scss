@@ -81,8 +81,8 @@
     &__content {
       @include col();
       @include size(12);
-      @include size-sm(6)
-      @include size-md(4)
+      @include size-sm(6);
+      @include size-md(4);
       align-self: stretch;
       padding-top: 1.81429em;
       margin-bottom: px-to-em(50);
